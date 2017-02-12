@@ -66,5 +66,5 @@ Only the last number is used to indicate changes in the Ruby wrapper itself.
 COPYING
 -------
 
-MultiMarkdown-5, multimarkdown-ffi are both licensed under the MIT License.
-See [LICENSE](LICENSE) for more information.
+MultiMarkdown-5, multimarkdown-ffi are both licensed under the GPL and the MIT License.
+See [LICENSE](LICENCSE) for more information.
