@@ -67,4 +67,4 @@ COPYING
 -------
 
 MultiMarkdown-5, multimarkdown-ffi are both licensed under the GPL and the MIT License.
-See [LICENSE](LICENCSE) for more information.
+See [LICENSE](LICENSE) for more information.
