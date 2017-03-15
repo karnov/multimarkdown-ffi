@@ -1,35 +1,19 @@
 language: ruby
-rvm:
-  - jruby-19mode
-  - jruby-head
-  - 2.2
-  - 2.3.1
-jdk:
-  - oraclejdk8
-  - openjdk7
-  - oraclejdk7
 matrix:
-  exclude:
-    - rvm: 2.2
-      jdk: oraclejdk7
-    - rvm: 2.2
-      jdk: openjdk8
-    - rvm: 2.2
-      jdk: oraclejdk8
-    - rvm: 2.3.1
+  include:
+    - rvm: jruby-1.7.26
       jdk: openjdk7
-    - rvm: 2.3.1
+    - rvm: jruby-1.7.9-d19
+      jdk: openjdk7
+    - rvm: jruby-head
+      jdk: openjdk7
+    - rvm: jruby-head
       jdk: oraclejdk7
-    - rvm: 2.3.1
-      jdk: oraclejdk8
-    - rvm: jruby-19mode
-      jdk: openjdk8
-    - rvm: jruby-19mode
-      jdk: oraclejdk8
-# env:
-  # global:
-  #    - JRUBY_OPTS="-J-Xms256m -J-Xmx512m"
-  #    - LDFLAGS="$LDFLAGS -z execstack"
+    - rvm: ruby-1.9.3-p551
+    - rvm: ruby-2.0
+    - rvm: ruby-2.3.1
+    - rvm: ruby-head
+    - rvm: ruby-head-clang
 
 script: 'bundle exec rake'
 
@@ -37,5 +21,4 @@ before_install:
   - gem install bundler
 
 cache:
-  - apt
   - bundler
