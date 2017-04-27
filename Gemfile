@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #   Copyright 2011 innoQ Deutschland GmbH
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,15 +14,16 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 # Specify your gem's dependencies in blub.gemspec
 gemspec
 
 group :development do
-  gem 'rdoc', '~> 4.2'
+  gem "rdoc", "~> 4.2"
+  gem "rubocop", require: false
 end
 
 group :test do
-  gem 'test-unit'
+  gem "test-unit"
 end
