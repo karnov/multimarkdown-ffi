@@ -11,3 +11,5 @@ pkg
 .ftags
 mkmf.log
 nbproject
+
+*.gem
